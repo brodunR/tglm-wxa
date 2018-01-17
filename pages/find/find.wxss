@@ -1,0 +1,123 @@
+/************************ 工具条 *****************************/
+page{
+  background-color: #f0f0f0;
+}
+.fun-bar{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 30rpx 0;
+  background-color: #ffffff;
+}
+.fun-item{
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 25rpx;
+  align-items: center;
+}
+
+.fun-item .fun-icon{
+  background-color: #26bd9a;
+  border-radius: 50rpx;
+  text-align: center;
+  padding: 10rpx 0;
+  width: 70rpx;
+}
+.fun-item .fun-icon image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.fun-item text{
+  margin-top: 20rpx;
+}
+
+/*********************** 好券直播 *************************/
+.live-view{
+  background-color: #ffffff;
+  margin-top: 30rpx;
+}
+
+.live-view .live-title{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+  color: #e4531e;
+  padding: 20rpx 0;
+}
+.live-view .live-title image{
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 20rpx;
+}
+.live-view .live-tab-bar{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: solid 2rpx #e6e6e6;
+}
+.live-view .live-tab-bar .live-tab{
+  display: inline-block;
+  padding: 30rpx;
+  font-size: 25rpx;
+}
+.live-view .live-tab-bar .live-tab.selected{
+  color: #e4531e;
+  border-bottom: solid 4rpx #e4531e;
+}
+
+.live-item-list .live-item{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.live-item-list .live-item .cover{
+  width: 200rpx;
+}
+.live-item-list .live-item .cover image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.live-item-list .live-item .detail{
+  flex-grow: 1;
+  border-bottom: solid 2rpx #e5e5e5;
+}
+.live-item-list .live-item .detail .detail-row1{
+  font-size: 20rpx;
+  padding: 10rpx;
+}
+.live-item-list .live-item .detail .detail-row2{
+  font-size: 20rpx;
+  color: #ababab;
+  padding: 5rpx;
+}
+.live-item-list .live-item .detail .detail-row3{
+  font-size: 20rpx;
+  color: #ababab;
+  padding: 5rpx;
+}
+.live-item-list .live-item .detail .detail-discount{
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #000000;
+}
+.live-item-list .live-item .detail .detail-row4{
+  font-size: 15rpx;
+  color: #ffffff;
+  background-color: #fbd294;
+  border-radius: 15rpx;
+  padding: 10rpx;
+}
+.live-item-list .live-item .price{
+  width: 150rpx;
+  padding: 20rpx;
+  border-bottom: solid 2rpx #e5e5e5;
+  font-size: 20rpx;
+  color: #ef5a0a;
+  text-align: center;
+}
+.live-item-list .live-item .price image{
+  width: 100rpx;
+  height: 100rpx;
+}

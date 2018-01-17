@@ -1,0 +1,61 @@
+<!--pages/find/find.wxml-->
+<view class='fun-bar'>
+  <view class='fun-item'>
+    <view class='fun-icon'>
+      <image src='icons/star.png'></image>
+    </view>
+    <text>精品推荐</text>
+  </view>
+  <view class='fun-item'>
+    <view class='fun-icon'>
+      <image src='icons/star.png'></image>
+    </view>
+    <text>热门活动</text>
+  </view>
+  <view class='fun-item'>
+    <view class='fun-icon'>
+      <image src='icons/star.png'></image>
+    </view>
+    <text>新手上路</text>
+  </view>
+</view>
+
+<view class='live-view'>
+  <view class='live-title'>
+    <image src='icons/live.png'></image>
+    <text>好券直播</text>
+  </view>
+  <scroll-view class='live-tab-bar' scroll-x>
+    <view class='live-tab {{item.text == selectedLiveTab ? "selected" : "normal"}}' wx:for='{{liveTabs}}' bindtap='selectLiveTab' data-tag-text='{{item.text}}'>
+      <text>{{item.text}}</text>
+    </view>
+  </scroll-view>
+  <view class='live-item-list'>
+    <view class='live-item' wx:for='{{liveItems}}'>
+      <view class='cover'>
+        <image src='{{item.cover}}'></image>
+      </view>
+      <view class='detail'>
+        <view class='detail-row1'>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='detail-row2'>
+          <text>现价 ￥{{item.currentPrice}}</text>
+          <text>月销 {{item.saleCountOfMonth}} 万件</text>
+        </view>
+        <view class='detail-row3'>
+          <text>券后价</text>
+          <text class='detail-discount'>￥{{item.discountPrice}}</text>
+        </view>
+        <view class='detail-row4'>
+          <text>券 {{item.ticketPrice}}元</text>
+          <text>余 {{item.ticketSurplus}} 张</text>
+        </view>
+      </view>
+      <view class='price'>
+        <image src='icons/go-detail.png'></image>
+        <text>赚 ￥{{item.rebate}}</text>
+      </view>
+    </view>
+  </view>
+</view>

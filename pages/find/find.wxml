@@ -1,28 +1,59 @@
 <!--pages/find/find.wxml-->
 <view class='fun-bar'>
-  <view class='fun-item'>
-    <view class='fun-icon'>
-      <image src='icons/star.png'></image>
-    </view>
+  <view class='fun-item item-for-recommend'>
+    <image src='icons/fun-recommend.png'></image>
     <text>精品推荐</text>
   </view>
-  <view class='fun-item'>
-    <view class='fun-icon'>
-      <image src='icons/star.png'></image>
-    </view>
+  <view class='fun-item item-for-activity'>
+    <image src='icons/fun-activity.png'></image>
     <text>热门活动</text>
   </view>
-  <view class='fun-item'>
-    <view class='fun-icon'>
-      <image src='icons/star.png'></image>
-    </view>
+  <view class='fun-item item-for-jackaroo'>
+    <image src='icons/fun-jackaroo.png'></image>
     <text>新手上路</text>
+  </view>
+</view>
+
+<view class='brand-view'>
+  <view class='brand-title'>
+    品牌精选
+  </view>
+  <view class='brand-list'>
+    <view class='brand-item item-for-new'>
+      <view class='item-title'>
+        <image src='icons/brand-new.png'></image>
+        <text>今日上新</text>
+      </view>
+      <view class='item-sub-title'>每日新券优先抢</view>
+      <view class='item-cover'>
+        <image src='icons/brand-cover-new.png'></image>
+      </view>
+    </view>
+    <view class='brand-item item-for-ju'>
+      <view class='item-title'>
+        <image src='icons/brand-ju.png'></image>
+        <text>聚划算</text>
+      </view>
+      <view class='item-sub-title'>巨划算宝贝排行</view>
+      <view class='item-cover'>
+        <image src='icons/brand-cover-ju.png'></image>
+      </view>
+    </view>
+    <view class='brand-item item-for-ticket'>
+      <view class='item-title'>
+        <image src='icons/brand-ticket.png'></image>
+        <text>品牌券</text>
+      </view>
+      <view class='item-sub-title'>知名品牌大额券</view>
+      <view class='item-cover'>
+        <image src='icons/brand-cover-ticket.png'></image>
+      </view>
+    </view>
   </view>
 </view>
 
 <view class='live-view'>
   <view class='live-title'>
-    <image src='icons/live.png'></image>
     <text>好券直播</text>
   </view>
   <scroll-view class='live-tab-bar' scroll-x>
@@ -48,13 +79,13 @@
           <text class='detail-discount'>￥{{item.discountPrice}}</text>
         </view>
         <view class='detail-row4'>
-          <text>券 {{item.ticketPrice}}元</text>
-          <text>余 {{item.ticketSurplus}} 张</text>
+          <text class='detail-ticket-price'>券 {{item.ticketPrice}}元</text>
+          <text class='detail-ticket-surplus'>余 {{item.ticketSurplus}} 张</text>
         </view>
       </view>
       <view class='price'>
-        <image src='icons/go-detail.png'></image>
-        <text>赚 ￥{{item.rebate}}</text>
+        <view><image src='icons/share.png'></image></view>
+        <text>赚￥{{item.rebate}}</text>
       </view>
     </view>
   </view>

@@ -1,1 +1,11 @@
-/* pages/report/report.wxss */
+.available-amount{
+  background-color: #fd7926;
+  color: #eeeeee;
+  padding: 40rpx 20rpx;
+  font-size: 28rpx;
+}
+.available-amount .amount-number{
+  margin-left: 50rpx;
+  font-size: 50rpx;
+  color: #ffffff;
+}

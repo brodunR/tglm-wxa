@@ -1,2 +1,47 @@
-<!--pages/report/report.wxml-->
-<text>pages/report/report.wxml</text>
+<view class='available-amount'>
+  <text>可提现金额</text>
+  <text class='amount-number'>{{availableAmount}}</text>
+  <text>元</text>
+</view>
+<view class='month-income'>
+  <view class='income-item'>
+    <text class='item-lable'>上月预估收入</text>
+    <text class='item-number'>￥{{lastMonth.predictionIncome}}</text>
+    <text class='item-status settled'>已结算</text>
+  </view>
+  <view class='income-item'>
+    <text class='item-lable'>上月预估收入</text>
+    <text class='item-number'>￥{{currentMonth.predictionIncome}}</text>
+    <text class='item-status unliquidated'>未结算</text>
+  </view>
+</view>
+<view class='month-income-hint'>
+  <text>每月20日结算上月预估收入，本月预估收入则在下月20日结算</text>
+</view>
+<view class='to-order-detail'>
+  <image></image>
+  <text>订单明细</text>
+</view>
+<view class='day-income'>
+  <view class='income-item'>
+    <text class='item-label'>今日</text>
+    <text class='item-number'>结算预估收入：￥{{theDay.predictionIncome}}</text>
+    <view class='item-detail'>
+      <view class='item-click'>
+        <text>点击数</text>
+        <text>{{theDay.clickCount}}</text>
+      </view>
+      <view class='item-paid'>
+        <text>付款笔数</text>
+        <text>{{theDay.paidOrderCount}}笔</text>
+      </view>
+      <view class='item-effect'>
+        <text>效果预估</text>
+        <text>{{theDay.predictionEffect}}笔</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='to-more-data'>
+  <text>更多效果数据</text>
+</view>

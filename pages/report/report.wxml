@@ -1,44 +1,48 @@
 <view class='available-amount'>
-  <text>可提现金额</text>
-  <text class='amount-number'>{{availableAmount}}</text>
-  <text>元</text>
+  <view><text>可提现金额</text></view>
+  <view>
+    <text class='amount-number'>{{availableAmount}}</text>
+    <text>元</text>
+  </view>
 </view>
 <view class='month-income'>
   <view class='income-item'>
-    <text class='item-lable'>上月预估收入</text>
-    <text class='item-number'>￥{{lastMonth.predictionIncome}}</text>
-    <text class='item-status settled'>已结算</text>
+    <view class='item-lable'>上月预估收入</view>
+    <view class='item-number'>￥{{lastMonth.predictionIncome}}</view>
+    <view class='item-status settled'>已结算</view>
   </view>
   <view class='income-item'>
-    <text class='item-lable'>上月预估收入</text>
-    <text class='item-number'>￥{{currentMonth.predictionIncome}}</text>
-    <text class='item-status unliquidated'>未结算</text>
+    <view class='item-lable'>上月预估收入</view>
+    <view class='item-number'>￥{{currentMonth.predictionIncome}}</view>
+    <view class='item-status unliquidated'>待结算</view>
   </view>
 </view>
 <view class='month-income-hint'>
   <text>每月20日结算上月预估收入，本月预估收入则在下月20日结算</text>
 </view>
 <view class='to-order-detail'>
-  <image></image>
+  <image src='icons/order.png'></image>
   <text>订单明细</text>
+  <image src='icons/goto.png'></image>
 </view>
 <view class='day-income'>
-  <view class='income-item'>
-    <text class='item-label'>今日</text>
-    <text class='item-number'>结算预估收入：￥{{theDay.predictionIncome}}</text>
-    <view class='item-detail'>
-      <view class='item-click'>
-        <text>点击数</text>
-        <text>{{theDay.clickCount}}</text>
-      </view>
-      <view class='item-paid'>
-        <text>付款笔数</text>
-        <text>{{theDay.paidOrderCount}}笔</text>
-      </view>
-      <view class='item-effect'>
-        <text>效果预估</text>
-        <text>{{theDay.predictionEffect}}笔</text>
-      </view>
+  <view class='income-title'>
+    <text class='{{theDay.day == "today" ? "active" : "normal"}}'>今日</text>
+    <text class='{{theDay.day == "yesterday" ? "active" : "normal"}}'>昨日</text>
+  </view>
+  <view class='income-number'>结算预估收入：￥{{theDay.predictionIncome}}</view>
+  <view class='income-detail'>
+    <view class='detail-item click'>
+      <view>点击数</view>
+      <view>{{theDay.clickCount}}</view>
+    </view>
+    <view class='detail-item paid'>
+      <view>付款笔数</view>
+      <view>{{theDay.paidOrderCount}}笔</view>
+    </view>
+    <view class='detail-item effect'>
+      <view>效果预估</view>
+      <view>￥{{theDay.predictionEffect}}</view>
     </view>
   </view>
 </view>

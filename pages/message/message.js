@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    sessions:[
+      { icon: 'icons/news.png', title: '联盟动态', firstMessageTitle:'联盟动态联盟动态联盟动态联盟动态联盟动态联盟动态'},
+      { icon: 'icons/school.png', title: '联盟学堂', firstMessageTitle: '联盟学堂联盟学堂联盟学堂联盟学堂' },
+      { icon: 'icons/rule.png', title: '联盟规则', firstMessageTitle: '联盟规则联盟规则联盟规则联盟规则联盟规则联盟规则联盟规则联盟规则' }
+    ]
   },
 
   /**

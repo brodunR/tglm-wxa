@@ -1,11 +1,127 @@
+page{
+  background-color: #f0f0f0;
+  color: #464646;
+  font-size: 28rpx;
+}
+
+/************************可提现金额*****************************/
 .available-amount{
   background-color: #fd7926;
   color: #eeeeee;
   padding: 40rpx 20rpx;
   font-size: 28rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .available-amount .amount-number{
-  margin-left: 50rpx;
   font-size: 50rpx;
   color: #ffffff;
+}
+
+/************************月预估收入*****************************/
+.month-income{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #ffffff;
+}
+.month-income .income-item{
+  flex-grow: 1;
+  padding: 30rpx;
+}
+
+.month-income .income-item .item-lable{
+  font-size: 28rpx;
+  color: #787878;
+}
+.month-income .income-item .item-number{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 10rpx;
+}
+.month-income .income-item .item-status{
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.month-income .income-item .item-status.settled{
+  color: #086e0a;
+}
+.month-income .income-item .item-status.unliquidated{
+  color: #d87d44;
+}
+
+.month-income-hint{
+  font-size: 24rpx;
+  background-color: #fbfbfb;
+  color: #9e9e9e;
+  text-align: center;
+  padding: 10rpx 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/************************转至订单明细*****************************/
+.to-order-detail{
+  margin-top: 20rpx;
+  padding: 20rpx;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 32rpx;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.to-order-detail text{
+  flex-grow: 1;
+}
+.to-order-detail image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+/************************日预估收入*****************************/
+.day-income{
+  background-color: #ffffff;
+}
+
+.day-income .income-title{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.day-income .income-title text{
+  flex-grow: 1;
+  text-align: center;
+  padding: 30rpx;
+  font-weight: bold;
+}
+.day-income .income-title text.active{
+  color: #ff885d;
+  font-size: 36rpx;
+}
+.day-income .income-number{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #000000;
+  padding: 30rpx;
+}
+.day-income .income-detail{
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 30rpx;
+}
+.day-income .income-detail .detail-item{
+  flex-grow: 1;
+}
+
+.to-more-data{
+  padding: 20rpx;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 30rpx;
+  background-color: #ffffff;
+  text-align: center;
+  color: #eb7c11;
 }

@@ -1,2 +1,11 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view class='session-list'>
+  <view class='session-item' wx:for='{{sessions}}'>
+    <view class='item-icon'>
+      <image src='{{item.icon}}'></image>
+    </view>
+    <view class='item-title'>
+      <view class='title-main'>{{item.title}}</view>
+      <view class='title-sub'>{{item.firstMessageTitle}}</view>
+    </view>
+  </view>
+</view>

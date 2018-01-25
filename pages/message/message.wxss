@@ -1,1 +1,46 @@
-/* pages/message/message.wxss */
+page{
+  background-color: #f0f0f0;
+  color: #464646;
+  font-size: 28rpx;
+}
+
+/************************会话列表*****************************/
+.session-list{
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.session-list .session-item{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #ffffff;
+}
+.session-list .session-item .item-icon{
+  padding: 30rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.session-list .session-item .item-icon image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.session-list .session-item .item-title{
+  padding: 20rpx;
+  flex-grow: 1;
+}
+.session-list .session-item:not(:last-child) .item-title{
+  border-bottom: 1px solid #e5e5e5;
+}
+.session-list .session-item .item-title .title-main{
+  font-size: 34rpx;
+  color: #000000;
+  line-height: 80rpx;
+}
+.session-list .session-item .item-title .title-sub{
+  font-size: 24rpx;
+  color: #b9b9b9;
+  height: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

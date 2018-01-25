@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/message/message",
     "pages/report/report",
     "pages/find/find",
-    "pages/message/message",
     "pages/my/my"
   ],
   "window":{

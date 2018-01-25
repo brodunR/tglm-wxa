@@ -5,7 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    availableAmount: 200.23
+    availableAmount: 200.23,
+    lastMonth:{
+      predictionIncome:0.01
+    },
+    currentMonth: {
+      predictionIncome: 0.01
+    },
+    theDay:{
+      predictionIncome: 0.01,
+      clickCount:1,
+      paidOrderCount:1,
+      predictionEffect:0.01,
+      day:'today'
+    }
   },
 
   /**

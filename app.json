@@ -1,9 +1,9 @@
 {
   "pages":[
+    "pages/my/my",
     "pages/message/message",
     "pages/report/report",
-    "pages/find/find",
-    "pages/my/my"
+    "pages/find/find"
   ],
   "window":{
     "backgroundTextStyle":"light",
